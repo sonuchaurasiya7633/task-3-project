@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Advanced Styling & JavaScript</h1>
+    <p>Build Interactive, Responsive Web Experiences</p>
+  </header>
+
+  <main class="container">
+ 
+    <section class="card">
+      <h2>📱 Responsive Design</h2>
+      <p>This layout adapts to screen size using media queries.</p>
+    </section>
+
+    
+    <section class="card">
+      <h2>🖼️ Image Carousel</h2>
+      <img id="carouselImage" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=60" alt="Carousel" />
+      <div class="button-group">
+        <button onclick="changeImage(-1)">Previous</button>
+        <button onclick="changeImage(1)">Next</button>
+      </div>
+    </section>
+
+    
+    <section class="card">
+      <h2>🧠 Interactive Quiz</h2>
+      <p id="question">Question will appear here</p>
+      <div class="button-group">
+        <button onclick="answer('A')">A</button>
+        <button onclick="answer('B')">B</button>
+      </div>
+      <p id="result"></p>
+    </section>
+
+    
+    <section class="card">
+      <h2>🌐 Fetch API Data</h2>
+      <button onclick="fetchJoke()">Get a Joke</button>
+      <p id="jokeText"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
